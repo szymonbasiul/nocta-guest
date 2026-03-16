@@ -1,4 +1,5 @@
 import { AppShowcase } from "@/components/nocta/app-showcase";
+import { Faq } from "@/components/nocta/faq";
 import { Features } from "@/components/nocta/features";
 import { Hero } from "@/components/nocta/hero";
 import { Navbar } from "@/components/nocta/navbar";
@@ -17,23 +18,7 @@ export default function Home() {
       <AppShowcase />
       <WhyNocta />
       <Testimonials />
-
-      <section id="faq" className="border-t border-white/5 py-24 sm:py-28">
-        <Container>
-          <div className="premium-card premium-border-glow rounded-[32px] px-6 py-10 text-center sm:px-10 sm:py-14">
-            <span className="eyebrow">coming next</span>
-
-            <h2 className="mt-6 text-balance text-3xl font-medium leading-tight text-foreground sm:text-4xl lg:text-5xl">
-              The trust layer is now stronger. Next we add FAQ clarity and remove friction before conversion.
-            </h2>
-
-            <p className="mx-auto mt-5 max-w-2xl text-pretty text-base leading-7 text-muted sm:text-lg">
-              The next branches will add a premium FAQ section, stronger CTA support,
-              and the final lower-page structure needed to complete the landing.
-            </p>
-          </div>
-        </Container>
-      </section>
+      <Faq />
 
       <section id="contact" className="border-t border-white/5 py-24 sm:py-28">
         <Container>
