@@ -1,3 +1,4 @@
+import { Features } from "@/components/nocta/features";
 import { Hero } from "@/components/nocta/hero";
 import { Navbar } from "@/components/nocta/navbar";
 import { SectionShell } from "@/components/nocta/section-shell";
@@ -28,22 +29,7 @@ export default function Home() {
       <Navbar />
       <Hero />
       <TrustedBy />
-
-      <SectionShell
-        id="experience"
-        eyebrow="guest experience foundation"
-        title="The experience narrative is centered on the stay, not the software."
-        description="This project showcases how the product improves check-in, service requests, reservations, communication, and on-property convenience through a polished mobile-first experience."
-      >
-        <PlaceholderList
-          items={[
-            "Mobile check-in and arrival flow",
-            "Concierge and support messaging",
-            "Dining, spa, and on-property reservations",
-            "Personalized stay details and guest preferences",
-          ]}
-        />
-      </SectionShell>
+      <Features />
 
       <SectionShell
         id="product"
@@ -83,14 +69,13 @@ export default function Home() {
             <span className="eyebrow">coming next</span>
 
             <h2 className="mt-6 text-balance text-3xl font-medium leading-tight text-foreground sm:text-4xl lg:text-5xl">
-              The hero is live. Next we build the trust and feature narrative
-              below the fold.
+              The hero and experience features are live. Next we build the product showcase.
             </h2>
 
             <p className="mx-auto mt-5 max-w-2xl text-pretty text-base leading-7 text-muted sm:text-lg">
               The next branches will turn the current structure into a full
-              premium hospitality landing page with stronger proof, feature
-              storytelling, and conversion support.
+              premium hospitality landing page with stronger product visuals,
+              trust, and conversion support.
             </p>
           </div>
         </Container>
