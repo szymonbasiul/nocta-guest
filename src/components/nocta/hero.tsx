@@ -219,7 +219,7 @@ export function Hero() {
             </div>
           </div>
 
-          <div className="relative mx-auto w-full max-w-[760px]">
+          <div className="relative mx-auto w-full max-w-[760px] overflow-hidden">
             <div className="pointer-events-none absolute left-1/2 top-1/2 h-[640px] w-[640px] -translate-x-1/2 -translate-y-1/2 rounded-full border border-[rgba(228,201,142,0.07)]" />
             <div className="pointer-events-none absolute left-1/2 top-1/2 h-[540px] w-[540px] -translate-x-1/2 -translate-y-1/2 rounded-full border border-[rgba(255,255,255,0.05)]" />
             <div className="absolute left-1/2 top-1/2 h-[540px] w-[540px] -translate-x-1/2 -translate-y-1/2 rounded-full bg-[radial-gradient(circle,rgba(228,201,142,0.09)_0%,rgba(78,138,99,0.08)_38%,transparent_72%)] blur-3xl" />

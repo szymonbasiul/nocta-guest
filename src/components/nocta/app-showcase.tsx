@@ -9,7 +9,7 @@ const benefits = [
 
 function ShowcasePhonePrimary() {
   return (
-    <div className="relative mx-auto w-full max-w-[350px] rounded-[44px] border border-[rgba(228,201,142,0.14)] bg-[linear-gradient(180deg,rgba(16,21,16,0.98)_0%,rgba(9,11,9,0.98)_100%)] p-3 shadow-[0_36px_90px_rgba(0,0,0,0.42)]">
+    <div className="phone-stage relative mx-auto w-full max-w-[350px] rounded-[44px] border border-[rgba(228,201,142,0.14)] bg-[linear-gradient(180deg,rgba(16,21,16,0.98)_0%,rgba(9,11,9,0.98)_100%)] p-3 shadow-[0_36px_90px_rgba(0,0,0,0.42)]">
       <div className="relative overflow-hidden rounded-[36px] border border-white/6 bg-[linear-gradient(180deg,rgba(19,25,20,0.96)_0%,rgba(11,14,11,0.98)_100%)]">
         <div className="flex items-center justify-between px-5 pt-4 text-[11px] font-medium text-foreground/85">
           <span>9:41</span>
@@ -119,7 +119,10 @@ function ShowcasePhonePrimary() {
 
 export function AppShowcase() {
   return (
-    <section id="product" className="relative border-t border-white/5 py-24 sm:py-28">
+    <section
+      id="product"
+      className="relative overflow-hidden border-t border-white/5 py-24 sm:py-28"
+    >
       <div className="section-grid pointer-events-none absolute inset-0 opacity-35" />
       <div className="pointer-events-none absolute left-1/2 top-[20%] h-[520px] w-[520px] -translate-x-1/2 rounded-full bg-[radial-gradient(circle,rgba(228,201,142,0.08)_0%,rgba(78,138,99,0.08)_40%,transparent_72%)] blur-3xl" />
 
@@ -179,7 +182,7 @@ export function AppShowcase() {
             </div>
           </div>
 
-          <div className="relative mx-auto w-full max-w-[760px]">
+          <div className="relative mx-auto w-full max-w-[760px] overflow-hidden">
             <div className="relative min-h-[640px]">
               <div className="absolute left-1/2 top-1/2 h-[620px] w-[620px] -translate-x-1/2 -translate-y-1/2 rounded-full border border-[rgba(228,201,142,0.08)]" />
               <div className="absolute left-1/2 top-1/2 h-[520px] w-[520px] -translate-x-1/2 -translate-y-1/2 rounded-full border border-white/5" />
