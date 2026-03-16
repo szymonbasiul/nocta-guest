@@ -1,54 +1,5 @@
 import { Container } from "@/components/shared/container";
 
-const leftGuestMoments = [
-  {
-    title: "Mobile check-in",
-    detail: "Arrival completed before the guest reaches the lobby.",
-  },
-  {
-    title: "Dining reservation",
-    detail: "Table bookings feel native to the stay experience.",
-  },
-];
-
-const rightGuestMoments = [
-  {
-    title: "Concierge request",
-    detail: "Guests message the hotel team without switching channels.",
-  },
-  {
-    title: "Late checkout",
-    detail: "Requests are handled cleanly with less operational friction.",
-  },
-];
-
-function HeroFloatingCard({
-  title,
-  detail,
-  align = "left",
-}: {
-  title: string;
-  detail: string;
-  align?: "left" | "right";
-}) {
-  return (
-    <div className="premium-card premium-border-glow premium-card-hover rounded-[26px] p-4 sm:p-5">
-      <div className="flex items-start gap-3">
-        <div className="mt-1 h-2.5 w-2.5 rounded-full bg-[linear-gradient(180deg,#E4C98E_0%,#C6A36A_100%)] shadow-[0_0_18px_rgba(228,201,142,0.45)]" />
-        <div className={align === "right" ? "text-left xl:text-right" : "text-left"}>
-          <p className="text-xs uppercase tracking-[0.22em] text-soft-gold/90">
-            guest moment
-          </p>
-          <p className="mt-2 text-sm font-medium text-foreground sm:text-[15px]">
-            {title}
-          </p>
-          <p className="mt-1 text-sm leading-6 text-muted">{detail}</p>
-        </div>
-      </div>
-    </div>
-  );
-}
-
 function PhoneStatusBar() {
   return (
     <div className="flex items-center justify-between px-5 pt-4 text-[11px] font-medium text-foreground/85">
@@ -268,53 +219,18 @@ export function Hero() {
             </div>
           </div>
 
-          <div className="relative mx-auto w-full max-w-[980px]">
+          <div className="relative mx-auto w-full max-w-[760px]">
             <div className="pointer-events-none absolute left-1/2 top-1/2 h-[640px] w-[640px] -translate-x-1/2 -translate-y-1/2 rounded-full border border-[rgba(228,201,142,0.07)]" />
             <div className="pointer-events-none absolute left-1/2 top-1/2 h-[540px] w-[540px] -translate-x-1/2 -translate-y-1/2 rounded-full border border-[rgba(255,255,255,0.05)]" />
             <div className="absolute left-1/2 top-1/2 h-[540px] w-[540px] -translate-x-1/2 -translate-y-1/2 rounded-full bg-[radial-gradient(circle,rgba(228,201,142,0.09)_0%,rgba(78,138,99,0.08)_38%,transparent_72%)] blur-3xl" />
 
-            <div className="relative z-10 grid items-center gap-6 xl:grid-cols-[220px_minmax(0,340px)_220px] xl:gap-8">
-              <div className="hidden xl:flex xl:flex-col xl:gap-6 xl:pt-14">
-                {leftGuestMoments.map((item) => (
-                  <HeroFloatingCard
-                    key={item.title}
-                    title={item.title}
-                    detail={item.detail}
-                    align="left"
-                  />
-                ))}
-              </div>
-
-              <div className="relative z-20 mx-auto w-full max-w-[340px]">
-                <PhoneScreen />
-              </div>
-
-              <div className="hidden xl:flex xl:flex-col xl:gap-6 xl:pb-14">
-                {rightGuestMoments.map((item) => (
-                  <HeroFloatingCard
-                    key={item.title}
-                    title={item.title}
-                    detail={item.detail}
-                    align="right"
-                  />
-                ))}
-              </div>
-            </div>
-
-            <div className="relative z-20 mt-6 grid gap-4 xl:hidden">
-              {[...leftGuestMoments, ...rightGuestMoments].map((item) => (
-                <HeroFloatingCard
-                  key={item.title}
-                  title={item.title}
-                  detail={item.detail}
-                  align="left"
-                />
-              ))}
+            <div className="relative z-20 mx-auto w-full max-w-[340px] pt-10">
+              <PhoneScreen />
             </div>
 
             <div className="absolute left-1/2 top-[40px] z-0 h-[220px] w-[220px] -translate-x-1/2 glow-orb-gold" />
-            <div className="absolute left-[12%] top-[220px] z-0 h-[140px] w-[140px] glow-orb-green" />
-            <div className="absolute bottom-[120px] right-[12%] z-0 h-[140px] w-[140px] glow-orb-gold" />
+            <div className="absolute left-[14%] top-[220px] z-0 h-[140px] w-[140px] glow-orb-green" />
+            <div className="absolute bottom-[140px] right-[14%] z-0 h-[140px] w-[140px] glow-orb-gold" />
           </div>
         </div>
       </Container>
