@@ -14,13 +14,13 @@ export function Navbar() {
       <Container className="flex h-20 items-center justify-between">
         <Link href="/" className="flex items-center gap-3">
           <div className="flex h-10 w-10 items-center justify-center rounded-2xl border border-[rgba(228,201,142,0.16)] bg-[linear-gradient(180deg,rgba(255,255,255,0.06)_0%,rgba(255,255,255,0.02)_100%)] shadow-[0_10px_30px_rgba(0,0,0,0.28)]">
-            <span className="text-sm font-semibold tracking-[0.18em] text-soft-gold">
+            <span className="text-sm font-semibold uppercase tracking-[0.18em] text-soft-gold">
               NG
             </span>
           </div>
 
           <div className="flex flex-col">
-            <span className="text-sm font-medium tracking-[0.18em] text-foreground uppercase">
+            <span className="text-sm font-medium uppercase tracking-[0.18em] text-foreground">
               Nocta Guest
             </span>
             <span className="text-xs text-muted">
@@ -51,7 +51,7 @@ export function Navbar() {
 
           <Link
             href="#contact"
-            className="inline-flex rounded-full border border-[rgba(228,201,142,0.16)] bg-[linear-gradient(180deg,rgba(228,201,142,0.18)_0%,rgba(198,163,106,0.12)_100%)] px-4 py-2 text-sm font-medium text-foreground shadow-[0_12px_30px_rgba(0,0,0,0.22)] transition-transform duration-200 hover:-translate-y-0.5"
+            className="inline-flex rounded-full border border-[rgba(228,201,142,0.16)] bg-[linear-gradient(180deg,rgba(228,201,142,0.18)_0%,rgba(198,163,106,0.12)_100%)] px-4 py-2 text-sm font-medium text-foreground shadow-[0_12px_30px_rgba(0,0,0,0.22)] transition-all duration-200 hover:-translate-y-0.5 hover:border-[rgba(228,201,142,0.28)]"
           >
             Book demo
           </Link>
