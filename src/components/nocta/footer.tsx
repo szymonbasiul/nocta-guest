@@ -16,7 +16,7 @@ export function Footer() {
       <div className="pointer-events-none absolute inset-0 bg-[radial-gradient(circle_at_bottom,rgba(228,201,142,0.06),transparent_34%)]" />
 
       <Container className="relative">
-        <div className="premium-card premium-border-glow rounded-[32px] p-6 sm:p-8 lg:p-10">
+        <div className="premium-card premium-border-glow rounded-[34px] p-6 sm:p-8 lg:p-10">
           <div className="grid gap-10 lg:grid-cols-[1fr_auto] lg:items-end">
             <div className="max-w-2xl">
               <div className="flex items-center gap-3">

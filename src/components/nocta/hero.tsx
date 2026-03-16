@@ -45,7 +45,7 @@ function HeroFloatingCard({
   return (
     <div
       className={[
-        "group rounded-[26px] border border-[rgba(228,201,142,0.12)] bg-[linear-gradient(180deg,rgba(255,255,255,0.055)_0%,rgba(255,255,255,0.02)_100%)] p-4 shadow-[0_16px_40px_rgba(0,0,0,0.28)] backdrop-blur-xl transition-all duration-300 hover:-translate-y-1 hover:border-[rgba(228,201,142,0.22)] hover:shadow-[0_22px_50px_rgba(0,0,0,0.34)]",
+        "premium-card premium-border-glow premium-card-hover rounded-[26px] p-4",
         className ?? "",
       ].join(" ")}
     >
@@ -80,13 +80,13 @@ function PhoneStatusBar() {
 
 function PhoneScreen() {
   return (
-    <div className="relative mx-auto w-full max-w-[320px] rounded-[42px] border border-[rgba(228,201,142,0.14)] bg-[linear-gradient(180deg,rgba(16,21,16,0.98)_0%,rgba(9,11,9,0.98)_100%)] p-3 shadow-[0_30px_90px_rgba(0,0,0,0.42)]">
-      <div className="pointer-events-none absolute inset-x-10 top-0 h-20 rounded-b-[40px] bg-[radial-gradient(circle_at_top,rgba(228,201,142,0.12),transparent_70%)] blur-2xl" />
-      <div className="relative overflow-hidden rounded-[34px] border border-white/6 bg-[linear-gradient(180deg,rgba(19,25,20,0.96)_0%,rgba(11,14,11,0.98)_100%)]">
+    <div className="relative mx-auto w-full max-w-[320px] rounded-[44px] border border-[rgba(228,201,142,0.16)] bg-[linear-gradient(180deg,rgba(16,21,16,0.98)_0%,rgba(9,11,9,0.99)_100%)] p-3 shadow-[0_38px_100px_rgba(0,0,0,0.46)]">
+      <div className="pointer-events-none absolute inset-x-10 top-0 h-20 rounded-b-[40px] bg-[radial-gradient(circle_at_top,rgba(228,201,142,0.14),transparent_70%)] blur-2xl" />
+      <div className="relative overflow-hidden rounded-[36px] border border-white/6 bg-[linear-gradient(180deg,rgba(19,25,20,0.96)_0%,rgba(11,14,11,0.98)_100%)]">
         <PhoneStatusBar />
 
         <div className="px-5 pb-5 pt-4">
-          <div className="rounded-[26px] border border-[rgba(228,201,142,0.12)] bg-[linear-gradient(135deg,rgba(26,51,39,0.88)_0%,rgba(12,16,12,0.96)_100%)] p-4 shadow-[inset_0_1px_0_rgba(255,255,255,0.04)]">
+          <div className="rounded-[28px] border border-[rgba(228,201,142,0.12)] bg-[linear-gradient(135deg,rgba(26,51,39,0.88)_0%,rgba(12,16,12,0.96)_100%)] p-4 shadow-[inset_0_1px_0_rgba(255,255,255,0.04)]">
             <p className="text-[11px] uppercase tracking-[0.2em] text-soft-gold/90">
               Welcome back
             </p>
@@ -214,14 +214,14 @@ export function Hero() {
   return (
     <section className="relative overflow-hidden border-b border-white/5">
       <div className="pointer-events-none absolute inset-0">
-        <div className="absolute left-1/2 top-[-120px] h-[520px] w-[520px] -translate-x-1/2 rounded-full bg-[radial-gradient(circle,rgba(78,138,99,0.22)_0%,rgba(78,138,99,0.08)_36%,transparent_72%)] blur-3xl" />
-        <div className="absolute right-[8%] top-[10%] h-[340px] w-[340px] rounded-full bg-[radial-gradient(circle,rgba(228,201,142,0.16)_0%,rgba(228,201,142,0.05)_42%,transparent_76%)] blur-3xl" />
-        <div className="absolute left-[8%] top-[28%] h-[280px] w-[280px] rounded-full bg-[radial-gradient(circle,rgba(78,138,99,0.14)_0%,rgba(78,138,99,0.04)_42%,transparent_76%)] blur-3xl" />
+        <div className="absolute left-1/2 top-[-120px] h-[520px] w-[520px] -translate-x-1/2 glow-orb-green" />
+        <div className="absolute right-[8%] top-[10%] h-[340px] w-[340px] glow-orb-gold" />
+        <div className="absolute left-[8%] top-[28%] h-[280px] w-[280px] glow-orb-green" />
         <div className="section-grid absolute inset-0 opacity-35" />
       </div>
 
-      <Container className="relative py-16 sm:py-20 lg:py-24">
-        <div className="grid items-center gap-14 xl:grid-cols-[0.9fr_1.1fr] xl:gap-8">
+      <Container className="relative py-18 sm:py-22 lg:py-26">
+        <div className="grid items-center gap-14 xl:grid-cols-[0.9fr_1.1fr] xl:gap-10">
           <div className="mx-auto max-w-2xl xl:mx-0">
             <span className="eyebrow">premium hospitality product</span>
 
@@ -258,7 +258,7 @@ export function Hero() {
             </div>
 
             <div className="mt-10 grid gap-4 sm:grid-cols-2">
-              <div className="premium-card premium-border-glow rounded-[28px] p-5">
+              <div className="premium-card premium-border-glow premium-card-hover rounded-[28px] p-5">
                 <p className="text-xs uppercase tracking-[0.2em] text-soft-gold">
                   for hotel teams
                 </p>
@@ -271,7 +271,7 @@ export function Hero() {
                 </p>
               </div>
 
-              <div className="premium-card premium-border-glow rounded-[28px] p-5">
+              <div className="premium-card premium-border-glow premium-card-hover rounded-[28px] p-5">
                 <p className="text-xs uppercase tracking-[0.2em] text-soft-gold">
                   for the guest
                 </p>
@@ -287,11 +287,11 @@ export function Hero() {
           </div>
 
           <div className="relative mx-auto w-full max-w-[760px] xl:max-w-none">
-            <div className="pointer-events-none absolute left-1/2 top-1/2 h-[620px] w-[620px] -translate-x-1/2 -translate-y-1/2 rounded-full border border-[rgba(228,201,142,0.08)]" />
-            <div className="pointer-events-none absolute left-1/2 top-1/2 h-[520px] w-[520px] -translate-x-1/2 -translate-y-1/2 rounded-full border border-[rgba(255,255,255,0.05)]" />
+            <div className="pointer-events-none absolute left-1/2 top-1/2 h-[640px] w-[640px] -translate-x-1/2 -translate-y-1/2 rounded-full border border-[rgba(228,201,142,0.07)]" />
+            <div className="pointer-events-none absolute left-1/2 top-1/2 h-[540px] w-[540px] -translate-x-1/2 -translate-y-1/2 rounded-full border border-[rgba(255,255,255,0.05)]" />
 
-            <div className="relative min-h-[740px]">
-              <div className="absolute inset-x-0 top-[90px] mx-auto h-[520px] w-[520px] rounded-full bg-[radial-gradient(circle,rgba(228,201,142,0.08)_0%,rgba(78,138,99,0.08)_38%,transparent_72%)] blur-3xl" />
+            <div className="relative min-h-[760px]">
+              <div className="absolute inset-x-0 top-[90px] mx-auto h-[540px] w-[540px] rounded-full bg-[radial-gradient(circle,rgba(228,201,142,0.09)_0%,rgba(78,138,99,0.08)_38%,transparent_72%)] blur-3xl" />
 
               <div className="relative z-10 mx-auto w-full max-w-[340px] pt-12">
                 <PhoneScreen />
@@ -309,9 +309,9 @@ export function Hero() {
                 ))}
               </div>
 
-              <div className="absolute left-1/2 top-[34px] z-0 h-[220px] w-[220px] -translate-x-1/2 rounded-full bg-[radial-gradient(circle,rgba(228,201,142,0.12)_0%,transparent_70%)] blur-3xl" />
-              <div className="absolute left-[18%] top-[220px] z-0 h-[140px] w-[140px] rounded-full bg-[radial-gradient(circle,rgba(78,138,99,0.14)_0%,transparent_72%)] blur-3xl" />
-              <div className="absolute bottom-[160px] right-[18%] z-0 h-[140px] w-[140px] rounded-full bg-[radial-gradient(circle,rgba(228,201,142,0.1)_0%,transparent_72%)] blur-3xl" />
+              <div className="absolute left-1/2 top-[34px] z-0 h-[220px] w-[220px] -translate-x-1/2 glow-orb-gold" />
+              <div className="absolute left-[18%] top-[220px] z-0 h-[140px] w-[140px] glow-orb-green" />
+              <div className="absolute bottom-[160px] right-[18%] z-0 h-[140px] w-[140px] glow-orb-gold" />
             </div>
           </div>
         </div>

@@ -92,7 +92,9 @@ function FeaturePreview({
   return (
     <div className="rounded-[28px] border border-white/6 bg-[linear-gradient(180deg,rgba(255,255,255,0.04)_0%,rgba(255,255,255,0.015)_100%)] p-4 shadow-[inset_0_1px_0_rgba(255,255,255,0.03)]">
       <div className="rounded-[24px] border border-white/6 bg-[linear-gradient(180deg,rgba(14,18,14,0.92)_0%,rgba(9,11,9,0.96)_100%)] p-4">
-        <div className={`rounded-[20px] border bg-gradient-to-br p-4 ${accentClass} ${pillClass}`}>
+        <div
+          className={`rounded-[20px] border bg-gradient-to-br p-4 ${accentClass} ${pillClass}`}
+        >
           <div className="flex items-center justify-between gap-3">
             <div>
               <p className="text-[11px] uppercase tracking-[0.18em] text-muted">
@@ -103,7 +105,9 @@ function FeaturePreview({
               </p>
             </div>
 
-            <div className={`rounded-full border bg-white/[0.04] px-3 py-1 text-[10px] uppercase tracking-[0.16em] ${pillClass}`}>
+            <div
+              className={`rounded-full border bg-white/[0.04] px-3 py-1 text-[10px] uppercase tracking-[0.16em] ${pillClass}`}
+            >
               live
             </div>
           </div>
@@ -161,7 +165,7 @@ function FeatureCard({
       : "bg-[linear-gradient(180deg,#8BC29F_0%,#4E8A63_100%)] shadow-[0_0_18px_rgba(78,138,99,0.35)]";
 
   return (
-    <article className="premium-card premium-border-glow rounded-[32px] p-5 sm:p-6 lg:p-7">
+    <article className="premium-card premium-border-glow premium-card-hover rounded-[32px] p-5 sm:p-6 lg:p-7">
       <div className="grid gap-8 lg:grid-cols-[0.95fr_1.05fr] lg:items-center">
         <div>
           <div className="flex items-center gap-3">
@@ -200,7 +204,7 @@ function FeatureCard({
 
 export function Features() {
   return (
-    <section id="experience" className="relative border-t border-white/5 py-24 sm:py-28">
+    <section id="experience" className="relative border-t border-white/5 py-24 sm:py-28 lg:py-32">
       <div className="section-grid pointer-events-none absolute inset-0 opacity-35" />
 
       <Container className="relative">
@@ -218,7 +222,7 @@ export function Features() {
           </p>
         </div>
 
-        <div className="mt-14 grid gap-6 lg:gap-7">
+        <div className="mt-16 grid gap-6 lg:gap-7">
           {features.map((feature, index) => (
             <FeatureCard
               key={feature.title}
