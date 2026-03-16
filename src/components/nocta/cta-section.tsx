@@ -8,14 +8,12 @@ const signals = [
 
 export function CtaSection() {
   return (
-    <section id="contact" className="relative border-t border-white/5 py-24 sm:py-28">
+    <section id="contact" className="relative border-t border-white/5 py-24 sm:py-28 lg:py-32">
       <div className="section-grid pointer-events-none absolute inset-0 opacity-35" />
-
-      <div className="pointer-events-none absolute left-1/2 top-[20%] h-[420px] w-[420px] -translate-x-1/2 rounded-full bg-[radial-gradient(circle,rgba(228,201,142,0.12)_0%,rgba(78,138,99,0.08)_45%,transparent_75%)] blur-3xl" />
+      <div className="pointer-events-none absolute left-1/2 top-[20%] h-[440px] w-[440px] -translate-x-1/2 rounded-full bg-[radial-gradient(circle,rgba(228,201,142,0.12)_0%,rgba(78,138,99,0.08)_45%,transparent_75%)] blur-3xl" />
 
       <Container className="relative">
-        <div className="premium-card premium-border-glow rounded-[36px] px-8 py-12 text-center sm:px-12 sm:py-16 lg:px-16 lg:py-20">
-
+        <div className="premium-card premium-border-glow rounded-[38px] px-8 py-12 text-center sm:px-12 sm:py-16 lg:px-16 lg:py-20">
           <span className="eyebrow">request a demo</span>
 
           <h2 className="mt-6 text-balance text-3xl font-medium leading-tight text-foreground sm:text-4xl lg:text-5xl">
@@ -38,7 +36,7 @@ export function CtaSection() {
 
             <a
               href="#"
-              className="inline-flex items-center justify-center rounded-full border border-white/10 bg-white/[0.03] px-7 py-3.5 text-sm font-medium text-muted transition-all duration-300 hover:text-foreground hover:border-white/15"
+              className="inline-flex items-center justify-center rounded-full border border-white/10 bg-white/[0.03] px-7 py-3.5 text-sm font-medium text-muted transition-all duration-300 hover:border-white/15 hover:text-foreground"
             >
               Talk to hospitality team
             </a>
@@ -54,7 +52,6 @@ export function CtaSection() {
               </span>
             ))}
           </div>
-
         </div>
       </Container>
     </section>
