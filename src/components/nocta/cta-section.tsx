@@ -8,7 +8,7 @@ const signals = [
 
 export function CtaSection() {
   return (
-    <section id="contact" className="relative border-t border-white/5 py-24 sm:py-28 lg:py-32">
+    <section id="contact" className="relative overflow-hidden border-t border-white/5 py-24 sm:py-28 lg:py-32">
       <div className="section-grid pointer-events-none absolute inset-0 opacity-35" />
       <div className="pointer-events-none absolute left-1/2 top-[20%] h-[440px] w-[440px] -translate-x-1/2 rounded-full bg-[radial-gradient(circle,rgba(228,201,142,0.12)_0%,rgba(78,138,99,0.08)_45%,transparent_75%)] blur-3xl" />
 

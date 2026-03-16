@@ -14,7 +14,7 @@ const footerLinks = [
 
 export function Footer() {
   return (
-    <footer className="relative border-t border-white/5 py-16 sm:py-20">
+    <footer className="relative overflow-hidden border-t border-white/5 py-16 sm:py-20">
       <div className="pointer-events-none absolute inset-0 bg-[radial-gradient(circle_at_bottom,rgba(228,201,142,0.06),transparent_34%)]" />
 
       <Container className="relative">

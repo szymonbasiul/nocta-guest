@@ -79,7 +79,10 @@ function TestimonialCard({
 
 export function Testimonials() {
   return (
-    <section id="testimonials" className="relative border-t border-white/5 py-24 sm:py-28">
+    <section
+      id="testimonials"
+      className="relative overflow-hidden border-t border-white/5 py-24 sm:py-28"
+    >
       <div className="section-grid pointer-events-none absolute inset-0 opacity-35" />
       <div className="pointer-events-none absolute left-[8%] top-[18%] h-[240px] w-[240px] rounded-full bg-[radial-gradient(circle,rgba(78,138,99,0.12)_0%,transparent_72%)] blur-3xl" />
       <div className="pointer-events-none absolute right-[10%] bottom-[16%] h-[260px] w-[260px] rounded-full bg-[radial-gradient(circle,rgba(228,201,142,0.10)_0%,transparent_72%)] blur-3xl" />
