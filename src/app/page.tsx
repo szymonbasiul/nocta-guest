@@ -1,3 +1,4 @@
+import { AppShowcase } from "@/components/nocta/app-showcase";
 import { Features } from "@/components/nocta/features";
 import { Hero } from "@/components/nocta/hero";
 import { Navbar } from "@/components/nocta/navbar";
@@ -30,22 +31,7 @@ export default function Home() {
       <Hero />
       <TrustedBy />
       <Features />
-
-      <SectionShell
-        id="product"
-        eyebrow="app showcase direction"
-        title="The product is presented through elegant app moments instead of fake analytics."
-        description="The upcoming showcase sections use premium mobile UI compositions, hospitality interaction cards, and layered storytelling to make the landing feel original and product-led."
-      >
-        <PlaceholderList
-          items={[
-            "Phone-led hero composition",
-            "Hospitality interaction cards",
-            "Refined feature storytelling blocks",
-            "Screenshot-friendly visual rhythm",
-          ]}
-        />
-      </SectionShell>
+      <AppShowcase />
 
       <SectionShell
         id="why-nocta"
@@ -69,13 +55,12 @@ export default function Home() {
             <span className="eyebrow">coming next</span>
 
             <h2 className="mt-6 text-balance text-3xl font-medium leading-tight text-foreground sm:text-4xl lg:text-5xl">
-              The hero and experience features are live. Next we build the product showcase.
+              The product story is now live. Next we build the commercial case for hotel teams.
             </h2>
 
             <p className="mx-auto mt-5 max-w-2xl text-pretty text-base leading-7 text-muted sm:text-lg">
-              The next branches will turn the current structure into a full
-              premium hospitality landing page with stronger product visuals,
-              trust, and conversion support.
+              The next branches will strengthen why operators choose Nocta Guest,
+              add better trust signals, and improve conversion support across the page.
             </p>
           </div>
         </Container>
