@@ -1,36 +1,145 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Nocta Guest
 
-## Getting Started
+Premium hospitality startup landing page built with Next.js, TypeScript, and Tailwind CSS.
 
-First, run the development server:
+---
+
+## Overview
+
+**Nocta Guest** is a premium product landing page concept designed for a modern hospitality startup.
+
+The project presents a **guest-facing mobile experience platform for hotels**, boutique stays, resorts, and hospitality teams. The landing page focuses on showcasing the product through **guest experience storytelling instead of traditional SaaS dashboard visuals**.
+
+This project was built as part of the **Pixel Breeze frontend portfolio** to demonstrate the ability to design and implement high-end product landing pages.
+
+---
+
+## Project Goals
+
+The goal of this project is to showcase the ability to build:
+
+- Premium startup landing pages
+- Modern product landing pages
+- Polished mobile app landing experiences
+- Custom Next.js marketing websites
+- High-end UI suitable for startup and SaaS products
+
+The project intentionally avoids generic SaaS dashboard aesthetics and instead focuses on **hospitality storytelling and elegant product presentation**.
+
+---
+
+## Design Direction
+
+The visual direction of this project is based on:
+
+- Dark luxury aesthetic
+- Premium hospitality branding
+- Mobile product presentation
+- Black, deep green, and soft gold color palette
+- Subtle glassmorphism and glow surfaces
+- Screenshot-friendly layout composition
+
+The goal was to create a landing page that visually feels like a **funded startup product website** rather than a template.
+
+---
+
+## Key Sections
+
+The page includes the following sections:
+
+- **Hero section** with premium mobile product stage
+- **Hospitality trust section**
+- **Guest experience features**
+- **App experience showcase**
+- **Why Nocta Guest section**
+- **Testimonials**
+- **FAQ**
+- **Closing call-to-action**
+- **Premium footer**
+
+Each section is designed to create strong visual compositions that work well for:
+
+- portfolio screenshots
+- Fiverr gig galleries
+- product presentation
+
+---
+
+## Tech Stack
+
+The project is built with:
+
+- **Next.js**
+- **TypeScript**
+- **Tailwind CSS**
+- **Next.js App Router**
+
+The codebase uses a **component-based architecture** and focuses on clean, maintainable frontend structure.
+
+---
+
+## Navigate to the project folder:
+
+cd nocta-guest
+
+## Install dependencies:
+
+npm install
+
+## Run the development server:
+
+npm run dev
+
+## Open the project in your browser:
+
+http://localhost:3000
+
+## Production Build
+
+## Create a production build:
+
+npm run build
+
+## Run the production server locally:
+
+npm run start
+Live Demo
+
+## After deploying to Vercel, add your production URL here:
+
+https://your-vercel-url.vercel.app
+
+---
+
+## Portfolio Context
+
+This project was created as a portfolio piece for Pixel Breeze to support service positioning on platforms like Fiverr.
+
+- It demonstrates capabilities in:
+- Startup landing page development
+- App landing page implementation
+- Premium UI frontend development
+- Next.js marketing websites
+- Hospitality tech landing pages
+
+---
+
+## Author
+
+Built by Pixel Breeze.
+
+---
+
+## License
+
+This project is intended for portfolio and presentation purposes.
+
+---
+
+## Local Development
+
+Clone the repository:
 
 ```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+git clone https://github.com/YOUR_GITHUB_USERNAME/nocta-guest.git
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
-
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
-
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
-
-## Learn More
-
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
