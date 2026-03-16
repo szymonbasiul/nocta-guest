@@ -222,3 +222,151 @@ select {
 .text-pretty {
   text-wrap: pretty;
 }
+
+/* ===== INTERACTION POLISH ===== */
+
+button,
+a {
+  transition:
+    transform 220ms ease,
+    box-shadow 220ms ease,
+    border-color 220ms ease,
+    background 220ms ease,
+    color 220ms ease;
+}
+
+/* CTA hover */
+
+a:hover {
+  transform: translateY(-1px);
+}
+
+/* premium card hover lift */
+
+.premium-card-hover {
+  transition:
+    transform 260ms ease,
+    border-color 260ms ease,
+    box-shadow 260ms ease,
+    background 260ms ease;
+}
+
+.premium-card-hover:hover {
+  transform: translateY(-4px);
+  border-color: rgba(228, 201, 142, 0.22);
+  box-shadow:
+    0 30px 80px rgba(0,0,0,0.42),
+    0 0 0 1px rgba(228,201,142,0.05);
+}
+
+/* subtle phone stage lift */
+
+.phone-stage {
+  transition:
+    transform 420ms ease,
+    box-shadow 420ms ease;
+}
+
+.phone-stage:hover {
+  transform: translateY(-6px);
+}
+
+/* link polish */
+
+.footer-link {
+  transition:
+    transform 200ms ease,
+    border-color 200ms ease,
+    background 200ms ease;
+}
+
+.footer-link:hover {
+  transform: translateY(-2px);
+}
+
+/* ===== INTERACTION POLISH ===== */
+
+button,
+a {
+  transition:
+    transform 220ms ease,
+    box-shadow 220ms ease,
+    border-color 220ms ease,
+    background 220ms ease,
+    color 220ms ease,
+    opacity 220ms ease;
+}
+
+a:hover {
+  transform: translateY(-1px);
+}
+
+.premium-card-hover {
+  transition:
+    transform 260ms ease,
+    border-color 260ms ease,
+    box-shadow 260ms ease,
+    background 260ms ease;
+}
+
+.premium-card-hover:hover {
+  transform: translateY(-4px);
+  border-color: rgba(228, 201, 142, 0.22);
+  box-shadow:
+    0 30px 80px rgba(0, 0, 0, 0.42),
+    0 0 0 1px rgba(228, 201, 142, 0.05);
+}
+
+.phone-stage {
+  transition:
+    transform 420ms ease,
+    box-shadow 420ms ease;
+}
+
+.phone-stage:hover {
+  transform: translateY(-6px);
+}
+
+.footer-link {
+  transition:
+    transform 200ms ease,
+    border-color 200ms ease,
+    background 200ms ease;
+}
+
+.footer-link:hover {
+  transform: translateY(-2px);
+}
+
+.reveal-on-scroll {
+  opacity: 0;
+  transform: translateY(32px);
+  transition:
+    opacity 700ms ease,
+    transform 700ms ease;
+  will-change: opacity, transform;
+}
+
+.reveal-on-scroll.is-visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+
+  *,
+  *::before,
+  *::after {
+    animation: none !important;
+    transition: none !important;
+  }
+
+  .reveal-on-scroll,
+  .reveal-on-scroll.is-visible {
+    opacity: 1;
+    transform: none;
+  }
+}

@@ -15,7 +15,7 @@ function PhoneStatusBar() {
 
 function PhoneScreen() {
   return (
-    <div className="relative mx-auto w-full max-w-[320px] rounded-[44px] border border-[rgba(228,201,142,0.16)] bg-[linear-gradient(180deg,rgba(16,21,16,0.98)_0%,rgba(9,11,9,0.99)_100%)] p-3 shadow-[0_38px_100px_rgba(0,0,0,0.46)]">
+    <div className="phone-stage relative mx-auto w-full max-w-[320px] rounded-[44px] border border-[rgba(228,201,142,0.16)] bg-[linear-gradient(180deg,rgba(16,21,16,0.98)_0%,rgba(9,11,9,0.99)_100%)] p-3 shadow-[0_38px_100px_rgba(0,0,0,0.46)]">
       <div className="pointer-events-none absolute inset-x-10 top-0 h-20 rounded-b-[40px] bg-[radial-gradient(circle_at_top,rgba(228,201,142,0.14),transparent_70%)] blur-2xl" />
       <div className="relative overflow-hidden rounded-[36px] border border-white/6 bg-[linear-gradient(180deg,rgba(19,25,20,0.96)_0%,rgba(11,14,11,0.98)_100%)]">
         <PhoneStatusBar />

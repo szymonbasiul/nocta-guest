@@ -1,5 +1,7 @@
+'use client'
 import Link from "next/link";
 import { Container } from "@/components/shared/container";
+import { scrollToTop } from "../../../lib/scroll-to-top";
 
 const footerLinks = [
   { label: "Experience", href: "#experience" },
@@ -19,8 +21,8 @@ export function Footer() {
         <div className="premium-card premium-border-glow rounded-[34px] p-6 sm:p-8 lg:p-10">
           <div className="grid gap-10 lg:grid-cols-[1fr_auto] lg:items-end">
             <div className="max-w-2xl">
-              <div className="flex items-center gap-3">
-                <div className="flex h-11 w-11 items-center justify-center rounded-2xl border border-[rgba(228,201,142,0.16)] bg-[linear-gradient(180deg,rgba(255,255,255,0.06)_0%,rgba(255,255,255,0.02)_100%)] shadow-[0_10px_30px_rgba(0,0,0,0.28)]">
+              <button onClick={scrollToTop} className="inline-flex cursor-pointer items-center gap-3">
+                <div className="flex h-11 w-11 items-center justify-center rounded-2xl border border-[rgba(228,201,142,0.16)] bg-[linear-gradient(180deg,rgba(255,255,255,0.06)_0%,rgba(255,255,255,0.02)_100%)] shadow-[0_10px_30px_rgba(0,0,0,0.28)] transition-all duration-300 hover:-translate-y-0.5 hover:border-[rgba(228,201,142,0.24)]">
                   <span className="text-sm font-semibold uppercase tracking-[0.18em] text-soft-gold">
                     NG
                   </span>
@@ -34,7 +36,7 @@ export function Footer() {
                     premium hospitality experience platform
                   </p>
                 </div>
-              </div>
+              </button>
 
               <h3 className="mt-6 max-w-xl text-balance text-2xl font-medium leading-tight text-foreground sm:text-3xl">
                 Designed to make the guest journey feel smoother, warmer, and more considered.
@@ -52,7 +54,7 @@ export function Footer() {
                 <Link
                   key={link.label}
                   href={link.href}
-                  className="rounded-2xl border border-white/6 bg-white/[0.03] px-4 py-3 text-sm text-foreground transition-all duration-300 hover:border-[rgba(228,201,142,0.14)] hover:bg-white/[0.05]"
+                  className="footer-link rounded-2xl border border-white/6 bg-white/[0.03] px-4 py-3 text-sm text-foreground transition-all duration-300 hover:border-[rgba(228,201,142,0.14)] hover:bg-white/[0.05]"
                 >
                   {link.label}
                 </Link>
