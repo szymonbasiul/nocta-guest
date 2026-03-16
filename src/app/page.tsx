@@ -1,6 +1,7 @@
 import { Hero } from "@/components/nocta/hero";
 import { Navbar } from "@/components/nocta/navbar";
 import { SectionShell } from "@/components/nocta/section-shell";
+import { TrustedBy } from "@/components/nocta/trusted-by";
 import { Container } from "@/components/shared/container";
 
 function PlaceholderList({ items }: { items: string[] }) {
@@ -26,6 +27,7 @@ export default function Home() {
     <main className="min-h-screen bg-background text-foreground">
       <Navbar />
       <Hero />
+      <TrustedBy />
 
       <SectionShell
         id="experience"
