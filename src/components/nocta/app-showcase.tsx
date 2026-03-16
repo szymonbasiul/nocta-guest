@@ -117,47 +117,6 @@ function ShowcasePhonePrimary() {
   );
 }
 
-function ShowcasePhoneSecondary({
-  title,
-  label,
-  accent = "gold",
-}: {
-  title: string;
-  label: string;
-  accent?: "gold" | "green";
-}) {
-  const accentClasses =
-    accent === "gold"
-      ? "border-[rgba(228,201,142,0.12)] bg-[linear-gradient(180deg,rgba(228,201,142,0.11)_0%,rgba(198,163,106,0.05)_100%)] text-soft-gold"
-      : "border-[rgba(78,138,99,0.18)] bg-[linear-gradient(180deg,rgba(78,138,99,0.12)_0%,rgba(26,51,39,0.05)_100%)] text-[#9ED0AE]";
-
-  return (
-    <div className="w-full max-w-[240px] rounded-[34px] border border-white/8 bg-[linear-gradient(180deg,rgba(14,18,14,0.95)_0%,rgba(9,11,9,0.98)_100%)] p-2.5 shadow-[0_24px_60px_rgba(0,0,0,0.34)]">
-      <div className="rounded-[28px] border border-white/6 bg-[linear-gradient(180deg,rgba(19,25,20,0.96)_0%,rgba(11,14,11,0.98)_100%)] p-4">
-        <div className={`inline-flex rounded-full border px-3 py-1 text-[10px] uppercase tracking-[0.16em] ${accentClasses}`}>
-          {label}
-        </div>
-
-        <p className="mt-4 text-sm font-medium leading-6 text-foreground">
-          {title}
-        </p>
-
-        <div className="mt-4 space-y-2.5">
-          <div className="rounded-[16px] border border-white/6 bg-white/[0.03] p-3">
-            <p className="text-xs text-muted">Guest-facing interaction</p>
-          </div>
-          <div className="rounded-[16px] border border-white/6 bg-white/[0.03] p-3">
-            <p className="text-xs text-muted">Premium service touchpoint</p>
-          </div>
-          <div className="rounded-[16px] border border-white/6 bg-white/[0.03] p-3">
-            <p className="text-xs text-muted">Operationally calmer flow</p>
-          </div>
-        </div>
-      </div>
-    </div>
-  );
-}
-
 export function AppShowcase() {
   return (
     <section id="product" className="relative border-t border-white/5 py-24 sm:py-28">
@@ -213,15 +172,15 @@ export function AppShowcase() {
                   Stronger screenshots for Fiverr
                 </p>
                 <p className="mt-3 text-sm leading-6 text-muted">
-                  This section is built to create premium mobile compositions
-                  that read instantly in gallery thumbnails and portfolio shots.
+                  This section is built to create a premium mobile composition
+                  that reads instantly in gallery thumbnails and portfolio shots.
                 </p>
               </div>
             </div>
           </div>
 
-          <div className="relative mx-auto w-full max-w-[860px]">
-            <div className="relative min-h-[760px]">
+          <div className="relative mx-auto w-full max-w-[760px]">
+            <div className="relative min-h-[640px]">
               <div className="absolute left-1/2 top-1/2 h-[620px] w-[620px] -translate-x-1/2 -translate-y-1/2 rounded-full border border-[rgba(228,201,142,0.08)]" />
               <div className="absolute left-1/2 top-1/2 h-[520px] w-[520px] -translate-x-1/2 -translate-y-1/2 rounded-full border border-white/5" />
 
@@ -229,25 +188,7 @@ export function AppShowcase() {
                 <ShowcasePhonePrimary />
               </div>
 
-              <div className="relative z-30 mt-8 flex flex-col items-center gap-4 xl:mt-0">
-                <div className="xl:absolute xl:left-2 xl:top-[118px]">
-                  <ShowcasePhoneSecondary
-                    title="Arrival details, check-in readiness, and room access are shown as part of the stay flow."
-                    label="arrival layer"
-                    accent="gold"
-                  />
-                </div>
-
-                <div className="xl:absolute xl:right-2 xl:bottom-[120px]">
-                  <ShowcasePhoneSecondary
-                    title="Concierge support, dining, and wellness interactions remain organized in one place."
-                    label="service layer"
-                    accent="green"
-                  />
-                </div>
-              </div>
-
-              <div className="absolute left-[12%] top-[180px] h-[140px] w-[140px] rounded-full bg-[radial-gradient(circle,rgba(78,138,99,0.15)_0%,transparent_72%)] blur-3xl" />
+              <div className="absolute left-[14%] top-[180px] h-[140px] w-[140px] rounded-full bg-[radial-gradient(circle,rgba(78,138,99,0.15)_0%,transparent_72%)] blur-3xl" />
               <div className="absolute bottom-[120px] right-[14%] h-[160px] w-[160px] rounded-full bg-[radial-gradient(circle,rgba(228,201,142,0.12)_0%,transparent_72%)] blur-3xl" />
             </div>
           </div>
