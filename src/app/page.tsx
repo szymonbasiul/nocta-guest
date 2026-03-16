@@ -2,27 +2,9 @@ import { AppShowcase } from "@/components/nocta/app-showcase";
 import { Features } from "@/components/nocta/features";
 import { Hero } from "@/components/nocta/hero";
 import { Navbar } from "@/components/nocta/navbar";
-import { SectionShell } from "@/components/nocta/section-shell";
 import { TrustedBy } from "@/components/nocta/trusted-by";
+import { WhyNocta } from "@/components/nocta/why-nocta";
 import { Container } from "@/components/shared/container";
-
-function PlaceholderList({ items }: { items: string[] }) {
-  return (
-    <div className="grid gap-3">
-      {items.map((item) => (
-        <div
-          key={item}
-          className="flex items-center justify-between rounded-2xl border border-white/8 bg-white/[0.03] px-4 py-4"
-        >
-          <span className="text-sm text-foreground sm:text-base">{item}</span>
-          <span className="text-xs uppercase tracking-[0.18em] text-soft-gold">
-            planned
-          </span>
-        </div>
-      ))}
-    </div>
-  );
-}
 
 export default function Home() {
   return (
@@ -32,22 +14,7 @@ export default function Home() {
       <TrustedBy />
       <Features />
       <AppShowcase />
-
-      <SectionShell
-        id="why-nocta"
-        eyebrow="commercial framing"
-        title="The landing is shaped for operators who care about service quality and modern guest expectations."
-        description="The copy and layout direction position Nocta Guest as a premium hospitality product for boutique hotels, aparthotels, and modern hospitality teams that want a smoother guest journey."
-      >
-        <PlaceholderList
-          items={[
-            "Why hotel teams choose Nocta Guest",
-            "Proof and hospitality trust layer",
-            "Premium testimonials presentation",
-            "Clear demo-oriented conversion path",
-          ]}
-        />
-      </SectionShell>
+      <WhyNocta />
 
       <section id="faq" className="border-t border-white/5 py-24 sm:py-28">
         <Container>
@@ -55,12 +22,12 @@ export default function Home() {
             <span className="eyebrow">coming next</span>
 
             <h2 className="mt-6 text-balance text-3xl font-medium leading-tight text-foreground sm:text-4xl lg:text-5xl">
-              The product story is now live. Next we build the commercial case for hotel teams.
+              The commercial case is now stronger. Next we add premium social proof.
             </h2>
 
             <p className="mx-auto mt-5 max-w-2xl text-pretty text-base leading-7 text-muted sm:text-lg">
-              The next branches will strengthen why operators choose Nocta Guest,
-              add better trust signals, and improve conversion support across the page.
+              The next branches will add hospitality-style testimonials, FAQ
+              clarity, and stronger conversion support to complete the landing page.
             </p>
           </div>
         </Container>
