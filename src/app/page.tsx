@@ -2,6 +2,7 @@ import { AppShowcase } from "@/components/nocta/app-showcase";
 import { Features } from "@/components/nocta/features";
 import { Hero } from "@/components/nocta/hero";
 import { Navbar } from "@/components/nocta/navbar";
+import { Testimonials } from "@/components/nocta/testimonials";
 import { TrustedBy } from "@/components/nocta/trusted-by";
 import { WhyNocta } from "@/components/nocta/why-nocta";
 import { Container } from "@/components/shared/container";
@@ -15,6 +16,7 @@ export default function Home() {
       <Features />
       <AppShowcase />
       <WhyNocta />
+      <Testimonials />
 
       <section id="faq" className="border-t border-white/5 py-24 sm:py-28">
         <Container>
@@ -22,12 +24,12 @@ export default function Home() {
             <span className="eyebrow">coming next</span>
 
             <h2 className="mt-6 text-balance text-3xl font-medium leading-tight text-foreground sm:text-4xl lg:text-5xl">
-              The commercial case is now stronger. Next we add premium social proof.
+              The trust layer is now stronger. Next we add FAQ clarity and remove friction before conversion.
             </h2>
 
             <p className="mx-auto mt-5 max-w-2xl text-pretty text-base leading-7 text-muted sm:text-lg">
-              The next branches will add hospitality-style testimonials, FAQ
-              clarity, and stronger conversion support to complete the landing page.
+              The next branches will add a premium FAQ section, stronger CTA support,
+              and the final lower-page structure needed to complete the landing.
             </p>
           </div>
         </Container>
