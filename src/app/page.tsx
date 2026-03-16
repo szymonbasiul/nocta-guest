@@ -2,6 +2,7 @@ import { AppShowcase } from "@/components/nocta/app-showcase";
 import { CtaSection } from "@/components/nocta/cta-section";
 import { Faq } from "@/components/nocta/faq";
 import { Features } from "@/components/nocta/features";
+import { Footer } from "@/components/nocta/footer";
 import { Hero } from "@/components/nocta/hero";
 import { Navbar } from "@/components/nocta/navbar";
 import { Testimonials } from "@/components/nocta/testimonials";
@@ -20,6 +21,7 @@ export default function Home() {
       <Testimonials />
       <Faq />
       <CtaSection />
+      <Footer />
     </main>
   );
 }
