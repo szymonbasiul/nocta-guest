@@ -217,7 +217,7 @@ export function Features() {
 	return (
 		<section
 			id="experience"
-			className="relative border-t border-white/5 py-24 sm:py-28 lg:py-32"
+			className="relative overflow-hidden border-t border-white/5 py-24 sm:py-28 lg:py-32"
 		>
 			<div className="section-grid pointer-events-none absolute inset-0 opacity-35" />
 

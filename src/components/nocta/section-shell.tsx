@@ -17,7 +17,7 @@ export function SectionShell({
   children,
 }: SectionShellProps) {
   return (
-    <section id={id} className="relative border-t border-white/5 py-24 sm:py-28">
+    <section id={id} className="relative overflow-hidden border-t border-white/5 py-24 sm:py-28">
       <div className="section-grid pointer-events-none absolute inset-0 opacity-40" />
 
       <Container className="relative">

@@ -19,7 +19,7 @@ export function TrustedBy() {
   return (
     <section
       id="trusted-by"
-      className="relative border-b border-white/5 py-14 sm:py-16 lg:py-20"
+      className="relative overflow-hidden border-b border-white/5 py-14 sm:py-16 lg:py-20"
     >
       <div className="pointer-events-none absolute inset-0 bg-[radial-gradient(circle_at_top,rgba(228,201,142,0.05),transparent_34%)]" />
 
