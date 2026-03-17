@@ -107,7 +107,7 @@ Live Demo
 
 ## After deploying to Vercel, add your production URL here:
 
-https://your-vercel-url.vercel.app
+https://nocta-guest.vercel.app/
 
 ---
 
